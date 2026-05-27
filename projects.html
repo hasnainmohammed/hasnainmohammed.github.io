@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Mohammed Hasnain</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">MH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="page-hero section">
+    <div class="container">
+      <div class="hero-bg"><div class="grid-overlay"></div><div class="glow glow-1"></div></div>
+      <p class="section-label">Portfolio</p>
+      <h1>Projects &amp; <span class="accent">Work</span></h1>
+      <p class="body-text">A collection of engineering projects spanning aerospace structures, robotics, and machine learning — built across HKUST, NUS, and various competitions.</p>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProjects('aerospace', this)">Aerospace</button>
+        <button class="filter-btn" onclick="filterProjects('robotics', this)">Robotics</button>
+        <button class="filter-btn" onclick="filterProjects('it', this)">IT / ML</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-full section">
+    <div class="container">
+      <div class="projects-list">
+
+        <!-- PROJECT 1 -->
+        <div class="proj-item" data-cat="aerospace">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">Aerospace</span>
+              <span class="ptag">CAD / FEA</span>
+              <span class="proj-year">2024–25</span>
+            </div>
+            <h2>Astrix Rocketry — Structures Team Lead</h2>
+            <p>As Structures Team Lead at HKUST's Astrix Rocketry and Satellite Club, I was responsible for the structural design, simulation, and integrity of rocket components. This involved material selection, FEA analysis using SolidWorks Simulation, and coordinating fabrication through CNC machining, laser cutting, and 3D printing.</p>
+            <p>Key challenges included optimising the mass-to-strength ratio of fin brackets and body tube joints under predicted aerodynamic loads, while ensuring manufacturability with available workshop tools.</p>
+            <ul class="proj-highlights">
+              <li>Led a subteam of 4 members</li>
+              <li>Performed FEA on critical load-bearing joints</li>
+              <li>Material selection for composite and aluminium structures</li>
+              <li>Coordinated fabrication and assembly</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">SolidWorks</span>
+              <span class="tool-chip">FEA</span>
+              <span class="tool-chip">CNC Machining</span>
+              <span class="tool-chip">3D Printing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="proj-item" data-cat="aerospace it">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">ML</span>
+              <span class="ptag">Aerospace</span>
+              <span class="ptag">Research</span>
+              <span class="proj-year">2025</span>
+            </div>
+            <h2>ML Methods for Airfoil Aerodynamic Optimisation</h2>
+            <p>Research internship at Temasek Laboratories, NUS, under Professor Nasr Mahmoud. Conducted a comprehensive literature review of neural network and surrogate machine learning methods applied to airfoil aerodynamic coefficient prediction and shape optimisation.</p>
+            <p>The review was formatted to MDPI Aerospace journal standards in LaTeX/Overleaf, covering physics-informed neural networks, Gaussian process regression, and gradient-based surrogate models. Findings were presented to the research group with a full slide deck and spoken script.</p>
+            <ul class="proj-highlights">
+              <li>Surveyed 30+ papers on ML-driven aerodynamic optimisation</li>
+              <li>Compared PINN, GPR, and classical surrogate approaches</li>
+              <li>Produced MDPI-formatted LaTeX literature review</li>
+              <li>Delivered research presentation to lab group</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">Python</span>
+              <span class="tool-chip">LaTeX</span>
+              <span class="tool-chip">Neural Networks</span>
+              <span class="tool-chip">CFD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="proj-item" data-cat="robotics">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">Robotics</span>
+              <span class="ptag">Embedded Systems</span>
+              <span class="proj-year">2024</span>
+            </div>
+            <h2>STM32 Rescue Operation — Embedded Firmware</h2>
+            <p>Developed embedded firmware for a "RESCUE OPERATION" system on the STM32L4S5 microcontroller as part of EE2028 at NUS. The system implemented a dual-mode state machine (RESCUE and BATTLE modes) controlled via UART commands and sensor inputs.</p>
+            <p>Features included I2C gyroscope integration with threshold-based warnings, PWM buzzer feedback, and comprehensive state transitions documented with flowcharts and inline code comments.</p>
+            <ul class="proj-highlights">
+              <li>Dual-mode state machine (RESCUE / BATTLE)</li>
+              <li>UART command parsing and I2C sensor integration</li>
+              <li>Gyroscope threshold alerts with buzzer feedback</li>
+              <li>Fully documented firmware with flowcharts</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">STM32L4S5</span>
+              <span class="tool-chip">C</span>
+              <span class="tool-chip">UART / I2C</span>
+              <span class="tool-chip">ARM Cortex-M4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="proj-item" data-cat="robotics aerospace">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">Robotics</span>
+              <span class="ptag">Aerospace</span>
+              <span class="proj-year">2024</span>
+            </div>
+            <h2>CanSat Camera FOV System</h2>
+            <p>Designed a 45°-angled camera system for a CanSat competition, computing ground coverage footprints and optimising the field-of-view geometry for low-altitude deployment. The analysis included geometric modelling of the projected elliptical ground footprint and optimisation of camera tilt angle for maximum usable coverage area.</p>
+            <ul class="proj-highlights">
+              <li>Geometric FOV analysis for angled camera deployment</li>
+              <li>Ground footprint computation at varying altitudes</li>
+              <li>Camera tilt optimisation for coverage maximisation</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">Python</span>
+              <span class="tool-chip">Geometry / Optics</span>
+              <span class="tool-chip">CAD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="proj-item" data-cat="aerospace">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">Aerospace</span>
+              <span class="ptag">Mechanical</span>
+              <span class="proj-year">2023–24</span>
+            </div>
+            <h2>Red Bird Racing — Formula Student Aerodynamics</h2>
+            <p>Contributed to the mechanical subteam of HKUST's Red Bird Racing Formula Student team, with involvement in aerodynamic component design and drivetrain work. Formula Student vehicles require careful integration of aero packaging with the chassis and mechanical systems.</p>
+            <ul class="proj-highlights">
+              <li>Aero and drivetrain mechanical subteam</li>
+              <li>CAD modelling of bodywork components</li>
+              <li>Team coordination across engineering disciplines</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">SolidWorks</span>
+              <span class="tool-chip">Aerodynamics</span>
+              <span class="tool-chip">Drivetrain</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="proj-item" data-cat="it">
+          <div class="proj-media">
+            <div class="img-placeholder">📸 Add image or video</div>
+          </div>
+          <div class="proj-detail">
+            <div class="proj-meta">
+              <span class="ptag">Machine Learning</span>
+              <span class="ptag">IT</span>
+              <span class="proj-year">2024</span>
+            </div>
+            <h2>Stock Price Direction Prediction — SVM Model</h2>
+            <p>Implemented a Support Vector Machine (SVM) model for binary stock price movement classification as part of a CS3244 Machine Learning group project at NUS. The model was trained on historical OHLCV features and technical indicators to predict next-day price direction.</p>
+            <ul class="proj-highlights">
+              <li>SVM implementation with feature engineering</li>
+              <li>Binary classification: price up vs. down</li>
+              <li>Cross-validation and hyperparameter tuning</li>
+              <li>Comparison against baseline and other team models</li>
+            </ul>
+            <div class="proj-tools">
+              <span class="tool-chip">Python</span>
+              <span class="tool-chip">scikit-learn</span>
+              <span class="tool-chip">SVM</span>
+              <span class="tool-chip">Google Colab</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2025 Mohammed Hasnain</span>
+      <a href="https://github.com/hasnainmohammed/hasnainmohammed.github.io" target="_blank">View source</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function filterProjects(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.proj-item').forEach(item => {
+        if (cat === 'all' || item.dataset.cat.includes(cat)) {
+          item.style.display = 'grid';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

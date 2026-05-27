@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Mohammed Hasnain</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cv.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">MH</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="page-hero section">
+    <div class="container">
+      <div class="hero-bg"><div class="grid-overlay"></div><div class="glow glow-1"></div></div>
+      <div class="cv-header">
+        <div>
+          <p class="section-label">Curriculum Vitae</p>
+          <h1>Mohammed <span class="accent">Hasnain</span></h1>
+          <p class="cv-tagline">Aerospace Engineering · Robotics · Information Technology</p>
+        </div>
+        <a href="cv.pdf" download class="btn btn-primary">⬇ Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-body section">
+    <div class="container">
+      <div class="cv-grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="cv-left">
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Contact</h3>
+            <ul class="cv-contact-list">
+              <li><span class="cv-icon">✉</span> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><span class="cv-icon">🔗</span> <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+              <li><span class="cv-icon">⌨</span> <a href="https://github.com/hasnainmohammed" target="_blank">GitHub</a></li>
+              <li><span class="cv-icon">📍</span> Hong Kong / Singapore</li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Education</h3>
+            <div class="cv-edu-item">
+              <span class="cv-year">2022 – 2027</span>
+              <strong>BEng Mechanical &amp; Aerospace Engineering</strong>
+              <span class="cv-inst">Hong Kong University of Science and Technology (HKUST)</span>
+              <span class="cv-note">Minors: Robotics, Information Technology</span>
+            </div>
+            <div class="cv-edu-item">
+              <span class="cv-year">2025 (Exchange)</span>
+              <strong>Exchange Semester</strong>
+              <span class="cv-inst">National University of Singapore (NUS)</span>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Technical Skills</h3>
+            <div class="skill-group">
+              <span class="skill-group-label">CAD / Simulation</span>
+              <div class="skill-tags">
+                <span class="skill-tag">SolidWorks</span>
+                <span class="skill-tag">FEA</span>
+                <span class="skill-tag">CFD</span>
+                <span class="skill-tag">CAD</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group-label">Embedded / Hardware</span>
+              <div class="skill-tags">
+                <span class="skill-tag">STM32</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">UART / I2C</span>
+                <span class="skill-tag">ARM Cortex-M4</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group-label">Software / ML</span>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group-label">Fabrication</span>
+              <div class="skill-tags">
+                <span class="skill-tag">CNC Machining</span>
+                <span class="skill-tag">Laser Cutting</span>
+                <span class="skill-tag">3D Printing</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group-label">Languages</span>
+              <div class="skill-tags">
+                <span class="skill-tag">English (Fluent)</span>
+                <span class="skill-tag">Cantonese (Conv.)</span>
+                <span class="skill-tag">Mandarin (Conv.)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="cv-right">
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Experience</h3>
+
+            <div class="cv-exp-item">
+              <div class="cv-exp-header">
+                <div>
+                  <strong>Research Intern</strong>
+                  <span class="cv-company">Temasek Laboratories, NUS</span>
+                </div>
+                <span class="cv-year">2025</span>
+              </div>
+              <p>Under Prof. Nasr Mahmoud. Produced a literature review on neural network and surrogate ML methods for airfoil aerodynamic optimisation, formatted to MDPI Aerospace standards in LaTeX.</p>
+            </div>
+
+            <div class="cv-exp-item">
+              <div class="cv-exp-header">
+                <div>
+                  <strong>Structures Team Lead</strong>
+                  <span class="cv-company">Astrix Rocketry &amp; Satellite Club, HKUST</span>
+                </div>
+                <span class="cv-year">2024–25</span>
+              </div>
+              <p>Led structural design and FEA for rocket components. Managed fabrication and coordinated a subteam of 4 members.</p>
+            </div>
+
+            <div class="cv-exp-item">
+              <div class="cv-exp-header">
+                <div>
+                  <strong>Mechanical Subteam Member</strong>
+                  <span class="cv-company">Red Bird Racing (Formula Student), HKUST</span>
+                </div>
+                <span class="cv-year">2023–24</span>
+              </div>
+              <p>Contributed to aerodynamic bodywork and drivetrain design for HKUST's Formula Student competition vehicle.</p>
+            </div>
+
+            <div class="cv-exp-item">
+              <div class="cv-exp-header">
+                <div>
+                  <strong>Member</strong>
+                  <span class="cv-company">HKUST Robotics Team</span>
+                </div>
+                <span class="cv-year">2023–24</span>
+              </div>
+              <p>Worked on mechanical design and integration within the robotics team's competition entries.</p>
+            </div>
+
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Projects</h3>
+            <div class="cv-proj-list">
+              <div class="cv-proj-row">
+                <span class="cv-proj-name">ML Airfoil Optimisation Research</span>
+                <span class="cv-proj-tags"><span class="ptag">ML</span> <span class="ptag">Aerospace</span></span>
+              </div>
+              <div class="cv-proj-row">
+                <span class="cv-proj-name">STM32 Rescue Operation Firmware</span>
+                <span class="cv-proj-tags"><span class="ptag">Embedded</span></span>
+              </div>
+              <div class="cv-proj-row">
+                <span class="cv-proj-name">CanSat Camera FOV System</span>
+                <span class="cv-proj-tags"><span class="ptag">Robotics</span></span>
+              </div>
+              <div class="cv-proj-row">
+                <span class="cv-proj-name">Stock Price Direction Prediction (SVM)</span>
+                <span class="cv-proj-tags"><span class="ptag">ML</span></span>
+              </div>
+            </div>
+            <a href="projects.html" class="proj-link" style="margin-top:1rem; display:inline-block;">See all projects →</a>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-section-title">Awards &amp; Activities</h3>
+            <ul class="cv-awards">
+              <li>CanSat Competition Participant</li>
+              <li>HKUST Formula Student Team</li>
+              <li>Hong Kong Permanent Resident</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2025 Mohammed Hasnain</span>
+      <a href="https://github.com/hasnainmohammed/hasnainmohammed.github.io" target="_blank">View source</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* cv.css */
+.page-hero { position: relative; padding-top: 160px; overflow: hidden; }
+
+.cv-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 1.5rem;
+}
+.cv-header h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem; }
+.cv-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.cv-body { padding-top: 0; }
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.cv-block { margin-bottom: 3rem; }
+.cv-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Contact */
+.cv-contact-list { display: flex; flex-direction: column; gap: 0.6rem; }
+.cv-contact-list li {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.875rem; color: var(--text-muted);
+}
+.cv-contact-list a { color: var(--text-muted); transition: color 0.2s; }
+.cv-contact-list a:hover { color: var(--blue); }
+.cv-icon { font-size: 0.9rem; }
+
+/* Education */
+.cv-edu-item { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.cv-edu-item strong { font-family: var(--font-display); font-size: 0.95rem; }
+.cv-inst { font-size: 0.85rem; color: var(--text-muted); }
+.cv-note { font-family: var(--font-mono); font-size: 0.7rem; color: var(--blue); }
+.cv-year {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  color: var(--text-muted); letter-spacing: 0.05em;
+}
+
+/* Skills */
+.skill-group { margin-bottom: 1rem; }
+.skill-group-label {
+  font-family: var(--font-mono); font-size: 0.68rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-muted); display: block; margin-bottom: 0.4rem;
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.skill-tag {
+  font-family: var(--font-mono); font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  background: var(--bg3);
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+}
+
+/* Experience */
+.cv-exp-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+.cv-exp-item:last-child { border-bottom: none; }
+.cv-exp-header {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; gap: 1rem;
+  margin-bottom: 0.5rem; flex-wrap: wrap;
+}
+.cv-exp-header strong { font-family: var(--font-display); font-size: 1rem; display: block; }
+.cv-company { font-size: 0.82rem; color: var(--blue); margin-top: 0.15rem; display: block; }
+.cv-exp-item p { font-size: 0.875rem; color: var(--text-muted); }
+
+/* Projects list */
+.cv-proj-list { display: flex; flex-direction: column; }
+.cv-proj-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-dim);
+  gap: 1rem; flex-wrap: wrap;
+}
+.cv-proj-name { font-size: 0.875rem; }
+.cv-proj-tags { display: flex; gap: 0.4rem; }
+
+/* Awards */
+.cv-awards { display: flex; flex-direction: column; gap: 0.6rem; }
+.cv-awards li {
+  font-size: 0.875rem; color: var(--text-muted);
+  padding-left: 1.25rem; position: relative;
+}
+.cv-awards li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+
+@media (max-width: 800px) {
+  .cv-grid { grid-template-columns: 1fr; gap: 0; }
+  .cv-header { flex-direction: column; align-items: flex-start; }
+}
